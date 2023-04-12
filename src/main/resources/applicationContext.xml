@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="school" class="task2.School">
+        <property name="name" value="Kodokelias"/>
+        <property name="address">
+            <bean class="task2.Address">
+                <property name="city" value="Vilnius"/>
+                <property name="street" value="Kosmonautu g"/>
+            </bean>
+        </property>
+
+    </bean>
+
+</beans>
